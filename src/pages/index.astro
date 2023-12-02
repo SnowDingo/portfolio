@@ -15,7 +15,7 @@ import Card from '../components/Card.astro';
 			<iframe frameborder="0" src="https://itch.io/embed/2361694?bg_color=1C1D21&amp;fg_color=FEFFFC&amp;link_color=91C4F2&amp;border_color=FEFFFC" width="552" height="167"><a href="https://snowdingo.itch.io/justapieaceofgolf-demo">Just A Pieace Of Golf **DEMO** by SnowDingo</a></iframe>
 			<iframe frameborder="0" src="https://itch.io/embed/2379877?bg_color=1C1D21&amp;fg_color=FEFFFC&amp;link_color=91C4F2&amp;border_color=FEFFFC" width="552" height="167"><a href="https://snowdingo.itch.io/pixel-fishes">PIXEL FISHES by SnowDingo</a></iframe>
 		</div>
-		<h2>Contact</h2>
+		<h2 id="Gradient">Contact</h2>
 		<p>Email: SnowDingo.tech@gmail.com</p>
 		<p>Github: @SnowDingo</p>
 		<p>Qiita/Zenn: @FireDingo</p>
@@ -37,8 +37,34 @@ import Card from '../components/Card.astro';
 	Observer.observe(pops)
 		
 </script>
+<script>
+		//スクリプト
+		function gradietn(entries){
+		if (entries[0].intersectionRatio == 0) {
+
+			return;
+		}else{
+			pops.classList.add("gradationanimation")
+			
+	}}
+	var Observer = new IntersectionObserver(gradietn);
+	var pops = document.getElementById("Gradient")
+	Observer.observe(pops)
+</script>
 
 <style>
+	@keyframes gradation{
+		0%{
+			color: #fefffc;
+		}
+		100%{
+			color: #91C4F2;
+		}
+	}
+	.gradationanimation {
+		animation: gradation 2s;
+		animation-fill-mode: forwards;
+	}
 	#POP {
 		opacity: 0;
 	}
