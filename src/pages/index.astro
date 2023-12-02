@@ -3,19 +3,22 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
+<Layout title="HOME|SnowDingo">
+	<main id="POP">
 		<h1><span class="text-gradient">SNOW DINGO</span></h1>
 		<h2>Young Game/Web developer</h2>
 		<h2 style="margin-top: 10%;">About SNOWDINGO</h2>
 		<p>With 8 years of experience working with code, I am a web/game developer who created many projects like book-warden and 3d maze demo..</p>
-		<div class="grid" id="POP">
+		<div class="grid">
 			<h2>My Project</h2>
 			<iframe frameborder="0" src="https://itch.io/embed/1788264?bg_color=1C1D21&amp;fg_color=fefffc&amp;link_color=91C4F2&amp;border_color=fefffc" width="552" height="167"><a href="https://snowdingo.itch.io/book-warden">Book warden by SnowDingo</a></iframe>
 			<iframe frameborder="0" src="https://itch.io/embed/2361694?bg_color=1C1D21&amp;fg_color=FEFFFC&amp;link_color=91C4F2&amp;border_color=FEFFFC" width="552" height="167"><a href="https://snowdingo.itch.io/justapieaceofgolf-demo">Just A Pieace Of Golf **DEMO** by SnowDingo</a></iframe>
 			<iframe frameborder="0" src="https://itch.io/embed/2379877?bg_color=1C1D21&amp;fg_color=FEFFFC&amp;link_color=91C4F2&amp;border_color=FEFFFC" width="552" height="167"><a href="https://snowdingo.itch.io/pixel-fishes">PIXEL FISHES by SnowDingo</a></iframe>
-
 		</div>
+		<h2>Contact</h2>
+		<p>Email: SnowDingo.tech@gmail.com</p>
+		<p>Github: @SnowDingo</p>
+		<p>Qiita/Zenn: @FireDingo</p>
 	</main>
 </Layout>
 
@@ -40,7 +43,7 @@ import Card from '../components/Card.astro';
 		opacity: 0;
 	}
 	.alpha{
-		animation:alpha 3s;
+		animation:alpha 1s;
 		animation-fill-mode: forwards;
 	}
 	@keyframes alpha{
